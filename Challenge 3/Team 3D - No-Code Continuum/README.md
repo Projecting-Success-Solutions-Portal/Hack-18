@@ -1,3 +1,6 @@
+
+![alt text](https://github.com/Projecting-Success-Solutions-Portal/Hack-18/blob/main/Challenge%203/Team%203D%20-%20No-Code%20Continuum/Team%203D%20Cover%20Image.PNG?raw=true)
+
 # Participants Names
 
 - Matteo Pallot
