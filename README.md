@@ -13,6 +13,7 @@ https://www.linkedin.com/company/projsuccess/
 The Hack 18 repository is designed to store full end to end working solutions deemed appropriate for open source solutions.
 
 The main purpose for Hack 18 is to solve business problems around project foresight, prediction, risk management and data analytics.
+
 ## List of Challenges
 
 Controls - Planning, Monitoring & Control
