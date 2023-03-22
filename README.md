@@ -7,19 +7,19 @@ The main purpose for Hack 18 is to solve business problems around project foresi
 ## List of Challenges
 
 Controls - Planning, Monitoring & Control
-- 1. Progress Pathway Planner
+- 1.Progress Pathway Planner
 
 Controls - Automated WBS
-- 2. Learning from WBS Diversity
+- 2.Learning from WBS Diversity
 
 Controls - Quality/Right First Time
-- 3. UNSPSC - A spoonful of UNSPSC's make the medicine go down
+- 3.UNSPSC - A spoonful of UNSPSC's make the medicine go down
 
 Delivery Support - Knowledge
-- 4. Neumorphism UX for Collecting Sentiment
+- 4.Neumorphism UX for Collecting Sentiment
 
 Controls - Contracts & Procurement
-- 5. Project Execution Plan - simplifying, automating process
+- 5.Project Execution Plan - simplifying, automating process
 
 ## Support
 
