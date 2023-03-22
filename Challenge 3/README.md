@@ -43,6 +43,7 @@ How do we address suppliers already stored in the system when they have been ass
 
 The data for this challenge is the UNSPSC data library that can be found along with their terms of use agreement in the following links:
 https://www.ungm.org/Public/UNSPSC
+
 https://www.ungm.org/Public/Pages/Terms
 
 Additionally, we will provide some anonymised request for codes along with the text provided to identify which code is needed.
