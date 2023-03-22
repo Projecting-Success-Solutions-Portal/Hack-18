@@ -1,0 +1,486 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2022.3">
+  <Nodes>
+    <Node ToolID="1">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.TextInput.TextInput">
+        <Position x="54" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <NumRows value="1" />
+          <Fields>
+            <Field name="RecordID" />
+            <Field name="Prompt" />
+            <Field name="email" />
+            <Field name="firstname" />
+            <Field name="shortdesc" />
+            <Field name="longdesc" />
+            <Field name="itemtype" />
+            <Field name="Response" />
+          </Fields>
+          <Data>
+            <r>
+              <c>1</c>
+              <c>What UNSPSC is for a Goods with the description watch Silver watch with a metal bracelet?</c>
+              <c>matteo.pallot@gmail.com</c>
+              <c>Matteo</c>
+              <c>Watch</c>
+              <c>Silver watch with a metal bracelet</c>
+              <c>Goods</c>
+              <c>The UNSPSC code for a silver watch with a metal bracelet is 41110000 - Watches and Clocks.</c>
+            </r>
+          </Data>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTextInput" />
+    </Node>
+    <Node ToolID="5">
+      <GuiSettings>
+        <Position x="294" y="162" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Value name="CopyrightText">© [CurrentYear] Continuum - Alteryx UK &amp; Northern Eurpoe Partner of the Year.</Value>
+          <Value name="InfoText">Continuum - enquiries@continuum.com - &lt;Link www.continuum.je|www.continuum.je&gt;</Value>
+          <Value name="PageNumbers">False</Value>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings Macro="FooterMacro.yxmc" />
+    </Node>
+    <Node ToolID="9">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="150" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="IF [itemtype] = &quot;Service&quot;&#xA;THEN &quot;A Service&quot;&#xA;ELSE [itemtype]&#xA;ENDIF" field="itemtype" size="2147483647" type="V_String" />
+            <FormulaField expression="LowerCase([itemtype])" field="itemtype" size="2147483647" type="V_String" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>itemtype = IF [itemtype] = "Service"
+THEN "A Service"
+ELSE [itemtype]
+ENDIF
+item...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="10">
+      <GuiSettings Plugin="PortfolioPluginsGui.ComposerImage.PortfolioComposerImage">
+        <Position x="294" y="234" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <ImageMode>File</ImageMode>
+          <Filename>..\Inputs\ChatGPT Logo.jpg</Filename>
+          <ModifyFilename value="False" />
+          <StopIfNotFound value="True" />
+          <ImageStyle FixedWidth="true" ImageWidth="220" ShowBorder="false" BorderWidth="1" BorderColor="#000000" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+      </Properties>
+      <EngineSettings EngineDll="PortfolioPluginsEngine.dll" EngineDllEntryPoint="AlteryxPortfolioComposerImagePlugin" />
+    </Node>
+    <Node ToolID="12">
+      <GuiSettings Plugin="PortfolioPluginsGui.ComposerImage.PortfolioComposerImage">
+        <Position x="294" y="306" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <ImageMode>File</ImageMode>
+          <Filename>..\Inputs\Continuum IconLogo Combined.png</Filename>
+          <ModifyFilename value="False" />
+          <StopIfNotFound value="True" />
+          <ImageStyle FixedWidth="true" ImageWidth="280" ShowBorder="false" BorderWidth="1" BorderColor="#000000" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+      </Properties>
+      <EngineSettings EngineDll="PortfolioPluginsEngine.dll" EngineDllEntryPoint="AlteryxPortfolioComposerImagePlugin" />
+    </Node>
+    <Node ToolID="14">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.JoinMultiple.JoinMultiple">
+        <Position x="390" y="234" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <JoinByRecPos value="True" />
+          <OutputJoinOnly value="False" />
+          <SelectConfiguration>
+            <Configuration outputConnection="Output">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Input_#1_Image" selected="True" rename="ChatGPT" />
+                <SelectField field="Input_#2_Image" selected="True" rename="Continuum" />
+                <SelectField field="Input_#3_Image" selected="True" rename="Alteryx" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoinMultiple" />
+    </Node>
+    <Node ToolID="15">
+      <GuiSettings Plugin="PortfolioPluginsGui.ComposerLayout.PortfolioComposerLayout">
+        <Position x="486" y="234" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <GroupingMode>PerRecord</GroupingMode>
+          <PreserveSourceFields value="False" />
+          <Orientation>H</Orientation>
+          <Separator>Continuous</Separator>
+          <Width>100%</Width>
+          <Height />
+          <BorderStyle Enabled="false" Color="#000000" Width="2" />
+          <SeparatorStyle Enabled="false" Color="#000000" Width="1" />
+          <Padding>0</Padding>
+          <LayoutFields orderChanged="False">
+            <Field name="ChatGPT" selected="True" Alignment="Left" />
+            <Field name="Continuum" selected="True" Alignment="Center" Width="" />
+            <Field name="Alteryx" selected="True" Width="" Alignment="Right" />
+          </LayoutFields>
+          <MergeIntoTable value="False" />
+          <SectionNameForGroup />
+          <SectionNameForAllRecords />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Horizontal Layout
+Each Individual Record</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="PortfolioPluginsEngine.dll" EngineDllEntryPoint="AlteryxPortfolioComposerLayoutPlugin" />
+    </Node>
+    <Node ToolID="17">
+      <GuiSettings Plugin="PortfolioPluginsGui.ComposerImage.PortfolioComposerImage">
+        <Position x="294" y="378" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <ImageMode>File</ImageMode>
+          <Filename>..\Inputs\alteryx-logo.png</Filename>
+          <ModifyFilename value="False" />
+          <StopIfNotFound value="True" />
+          <ImageStyle FixedWidth="true" ImageWidth="200" ShowBorder="false" BorderWidth="1" BorderColor="#000000" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+      </Properties>
+      <EngineSettings EngineDll="PortfolioPluginsEngine.dll" EngineDllEntryPoint="AlteryxPortfolioComposerImagePlugin" />
+    </Node>
+    <Node ToolID="18">
+      <GuiSettings Plugin="PortfolioPluginsGui.ComposerText.PortfolioComposerText">
+        <Position x="294" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Images />
+          <Output>Email Body</Output>
+          <HeaderMode value="False" />
+          <RawMode value="False" />
+          <ValidatePCXML value="True" />
+          <Message />
+          <RichTextMode value="True" />
+          <RichTextString><![CDATA[{\rtf1\ansi\ansicpg1252\deff0\deflang2057{\fonttbl{\f0\fnil\fcharset0 Arial;}}
+\viewkind4\uc1\pard\fs24 Hi [firstname],\par
+\par
+Thank you for your submission to request a UNSPC code powered by Alteryx and ChatGPT.\par
+\par
+You requested the UNSPC code for [itemtype] with the following descriptions:\par
+Short description: [shortdesc]\par
+Long desctiption: [longdesc]\par
+\par
+\b [Response]\b0\par
+\par
+We hope you are satisfied with your response! If not, please try another submission with more detailed descriptions, please note this is a demo and should not be used in production.\par
+\par
+If you are interested in hearding more about our Microsoft Forms, Microsoft PowerAutomate, Alteryx and Chat GPT solution, please get in contact at enquires@continuum.je\par
+\par
+Kind regards,\par
+Team No-Code Continuum (and ChatGPT)\par
+}
+]]></RichTextString>
+          <Styles>
+            <Style Name="TextStyle" />
+          </Styles>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Hi [firstname],
+
+Thank you for...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="PortfolioPluginsEngine.dll" EngineDllEntryPoint="AlteryxPortfolioComposerTextPlugin" />
+    </Node>
+    <Node ToolID="19">
+      <GuiSettings Plugin="PortfolioPluginsGui.ComposerLayout.PortfolioComposerLayout">
+        <Position x="726" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <GroupingMode>PerRecord</GroupingMode>
+          <PreserveSourceFields value="False" />
+          <Orientation>V</Orientation>
+          <Separator>Breaking</Separator>
+          <Width>100%</Width>
+          <Height />
+          <BorderStyle Enabled="false" Color="#000000" Width="2" />
+          <SeparatorStyle Enabled="false" Color="#000000" Width="1" />
+          <Padding>0</Padding>
+          <LayoutFields orderChanged="True">
+            <Field name="Email Body" selected="True" Alignment="Center" Width="" />
+            <Field name="Layout" selected="True" Width="" Alignment="Center" />
+            <Field name="Footer" selected="True" Width="" Alignment="Center" />
+          </LayoutFields>
+          <MergeIntoTable value="False" />
+          <SectionNameForGroup />
+          <SectionNameForAllRecords />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Vertical Layout
+Section Breaks
+Each Individual Record</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="PortfolioPluginsEngine.dll" EngineDllEntryPoint="AlteryxPortfolioComposerLayoutPlugin" />
+    </Node>
+    <Node ToolID="20">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.JoinMultiple.JoinMultiple">
+        <Position x="630" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <JoinByRecPos value="True" />
+          <OutputJoinOnly value="False" />
+          <SelectConfiguration>
+            <Configuration outputConnection="Output">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Input_#1_email" selected="True" />
+                <SelectField field="Input_#1_Email Body" selected="True" />
+                <SelectField field="Input_#2_Layout" selected="True" />
+                <SelectField field="Input_#3_Footer" selected="True" />
+                <SelectField field="*Unknown" selected="False" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoinMultiple" />
+    </Node>
+    <Node ToolID="22">
+      <GuiSettings Plugin="PortfolioPluginsGui.Email.Email">
+        <Position x="834" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SMTPServerName>smtp.gmail.com</SMTPServerName>
+          <ToIsField value="True" />
+          <To>email</To>
+          <CcIsField value="False" />
+          <Cc />
+          <BccIsField value="False" />
+          <Bcc />
+          <FromIsField value="False" />
+          <From>noreply.continuumje@gmail.com</From>
+          <SubjectIsField value="False" />
+          <Subject>Your UNSPSC Code Request</Subject>
+          <BodyIsField value="True" />
+          <Body>Layout</Body>
+          <UserName>noreply.continuumje@gmail.com</UserName>
+          <Enabled>True</Enabled>
+          <Password>4AB297D0932081509906C93A1D7F8EF0C9C607F26E9DEBDE336B29287214C21ED8485A72E</Password>
+          <Port>465</Port>
+          <Encryption>SSL/TLS</Encryption>
+          <SMTPAuth value="True" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="PortfolioPluginsEngine.dll" EngineDllEntryPoint="AlteryxComposerEmail" />
+    </Node>
+    <Node ToolID="23">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="834" y="126" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\georg\AppData\Local\Temp\Engine_38480_4f465f3664db8a41b25fb3b31d0f084d_\Engine_38480_77170a26739daa488edea7a916453a1a~.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Report</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="9" Connection="Input" />
+    </Connection>
+    <Connection name="#3">
+      <Origin ToolID="5" Connection="Output" />
+      <Destination ToolID="20" Connection="Input" />
+    </Connection>
+    <Connection name="#2">
+      <Origin ToolID="15" Connection="Output" />
+      <Destination ToolID="20" Connection="Input" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="18" Connection="Output" />
+      <Destination ToolID="20" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="9" Connection="Output" />
+      <Destination ToolID="18" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="9" Connection="Output" />
+      <Destination ToolID="5" Connection="Report Layout" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="10" Connection="Output" />
+      <Destination ToolID="14" Connection="Input" />
+    </Connection>
+    <Connection name="#2">
+      <Origin ToolID="12" Connection="Output" />
+      <Destination ToolID="14" Connection="Input" />
+    </Connection>
+    <Connection name="#3">
+      <Origin ToolID="17" Connection="Output" />
+      <Destination ToolID="14" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="14" Connection="Output" />
+      <Destination ToolID="15" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="19" Connection="Output" />
+      <Destination ToolID="22" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="19" Connection="Output" />
+      <Destination ToolID="23" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="20" Connection="Output" />
+      <Destination ToolID="19" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <RunWithE2 value="True" />
+    <PredictiveToolsCodePage value="1252" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>Generate Formatted Email Response</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+      <WorkflowId value="9813ddf6-a6af-42de-9fbf-4550bc88996b" />
+      <Telemetry>
+        <PreviousWorkflowId value="c80fd934-886f-4b3a-9cc5-9c057b7b717a" />
+        <OriginWorkflowId value="c80fd934-886f-4b3a-9cc5-9c057b7b717a" />
+      </Telemetry>
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>

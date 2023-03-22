@@ -1,0 +1,959 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2022.3">
+  <Nodes>
+    <Node ToolID="1">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="54" y="126" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File OutputFileName="" RecordLimit="" SearchSubDirs="False" FileFormat="25">..\..\Challenges\Challenge 3\Data\Anonymised_ UNSPC request register.xlsx|||`query (6)$`</File>
+          <FormatSpecificOptions>
+            <FirstRowData>False</FirstRowData>
+            <ImportLine>1</ImportLine>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Anonymised_ UNSPC request register.xlsx
+Query=`query (6)$`</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Single or Multi-Line" size="255" source="File: C:\Users\User\OneDrive - Continuum Consulting\Shared Documents\Team\Hackathon\2023\Project Hack 18\Challenges\Challenge 3\Data\Anonymised_ UNSPC request register.xlsx|||`query (6)$`" type="V_String" />
+            <Field name="Request Status" size="255" source="File: C:\Users\User\OneDrive - Continuum Consulting\Shared Documents\Team\Hackathon\2023\Project Hack 18\Challenges\Challenge 3\Data\Anonymised_ UNSPC request register.xlsx|||`query (6)$`" type="V_String" />
+            <Field name="ID" source="File: C:\Users\User\OneDrive - Continuum Consulting\Shared Documents\Team\Hackathon\2023\Project Hack 18\Challenges\Challenge 3\Data\Anonymised_ UNSPC request register.xlsx|||`query (6)$`" type="Double" />
+            <Field name="Title" size="255" source="File: C:\Users\User\OneDrive - Continuum Consulting\Shared Documents\Team\Hackathon\2023\Project Hack 18\Challenges\Challenge 3\Data\Anonymised_ UNSPC request register.xlsx|||`query (6)$`" type="V_String" />
+            <Field name="SubmitRqstBool" source="File: C:\Users\User\OneDrive - Continuum Consulting\Shared Documents\Team\Hackathon\2023\Project Hack 18\Challenges\Challenge 3\Data\Anonymised_ UNSPC request register.xlsx|||`query (6)$`" type="Double" />
+            <Field name="Raised Date" source="File: C:\Users\User\OneDrive - Continuum Consulting\Shared Documents\Team\Hackathon\2023\Project Hack 18\Challenges\Challenge 3\Data\Anonymised_ UNSPC request register.xlsx|||`query (6)$`" type="DateTime" />
+            <Field name="UNSPSC Number" size="255" source="File: C:\Users\User\OneDrive - Continuum Consulting\Shared Documents\Team\Hackathon\2023\Project Hack 18\Challenges\Challenge 3\Data\Anonymised_ UNSPC request register.xlsx|||`query (6)$`" type="V_String" />
+            <Field name="Item Type" size="255" source="File: C:\Users\User\OneDrive - Continuum Consulting\Shared Documents\Team\Hackathon\2023\Project Hack 18\Challenges\Challenge 3\Data\Anonymised_ UNSPC request register.xlsx|||`query (6)$`" type="V_String" />
+            <Field name="Item Type Short Ref" size="255" source="File: C:\Users\User\OneDrive - Continuum Consulting\Shared Documents\Team\Hackathon\2023\Project Hack 18\Challenges\Challenge 3\Data\Anonymised_ UNSPC request register.xlsx|||`query (6)$`" type="V_String" />
+            <Field name="Short Description" size="255" source="File: C:\Users\User\OneDrive - Continuum Consulting\Shared Documents\Team\Hackathon\2023\Project Hack 18\Challenges\Challenge 3\Data\Anonymised_ UNSPC request register.xlsx|||`query (6)$`" type="V_WString" />
+            <Field name="Long Description" size="3517" source="File: C:\Users\User\OneDrive - Continuum Consulting\Shared Documents\Team\Hackathon\2023\Project Hack 18\Challenges\Challenge 3\Data\Anonymised_ UNSPC request register.xlsx|||`query (6)$`" type="V_WString" />
+            <Field name="UoM" size="255" source="File: C:\Users\User\OneDrive - Continuum Consulting\Shared Documents\Team\Hackathon\2023\Project Hack 18\Challenges\Challenge 3\Data\Anonymised_ UNSPC request register.xlsx|||`query (6)$`" type="V_WString" />
+            <Field name="Size" size="255" source="File: C:\Users\User\OneDrive - Continuum Consulting\Shared Documents\Team\Hackathon\2023\Project Hack 18\Challenges\Challenge 3\Data\Anonymised_ UNSPC request register.xlsx|||`query (6)$`" type="V_String" />
+            <Field name="Comments" size="255" source="File: C:\Users\User\OneDrive - Continuum Consulting\Shared Documents\Team\Hackathon\2023\Project Hack 18\Challenges\Challenge 3\Data\Anonymised_ UNSPC request register.xlsx|||`query (6)$`" type="V_WString" />
+            <Field name="Year" size="255" source="File: C:\Users\User\OneDrive - Continuum Consulting\Shared Documents\Team\Hackathon\2023\Project Hack 18\Challenges\Challenge 3\Data\Anonymised_ UNSPC request register.xlsx|||`query (6)$`" type="V_String" />
+            <Field name="SufficientInformation" source="File: C:\Users\User\OneDrive - Continuum Consulting\Shared Documents\Team\Hackathon\2023\Project Hack 18\Challenges\Challenge 3\Data\Anonymised_ UNSPC request register.xlsx|||`query (6)$`" type="Bool" />
+            <Field name="ProcurComment" source="File: C:\Users\User\OneDrive - Continuum Consulting\Shared Documents\Team\Hackathon\2023\Project Hack 18\Challenges\Challenge 3\Data\Anonymised_ UNSPC request register.xlsx|||`query (6)$`" type="Double" />
+            <Field name="UNSPSCDescLong" size="1508" source="File: C:\Users\User\OneDrive - Continuum Consulting\Shared Documents\Team\Hackathon\2023\Project Hack 18\Challenges\Challenge 3\Data\Anonymised_ UNSPC request register.xlsx|||`query (6)$`" type="V_String" />
+            <Field name="New Item AutoNumber" source="File: C:\Users\User\OneDrive - Continuum Consulting\Shared Documents\Team\Hackathon\2023\Project Hack 18\Challenges\Challenge 3\Data\Anonymised_ UNSPC request register.xlsx|||`query (6)$`" type="Double" />
+            <Field name="UNSPSCCd" size="255" source="File: C:\Users\User\OneDrive - Continuum Consulting\Shared Documents\Team\Hackathon\2023\Project Hack 18\Challenges\Challenge 3\Data\Anonymised_ UNSPC request register.xlsx|||`query (6)$`" type="V_String" />
+            <Field name="SizeCd" source="File: C:\Users\User\OneDrive - Continuum Consulting\Shared Documents\Team\Hackathon\2023\Project Hack 18\Challenges\Challenge 3\Data\Anonymised_ UNSPC request register.xlsx|||`query (6)$`" type="Double" />
+            <Field name="UOM2" size="255" source="File: C:\Users\User\OneDrive - Continuum Consulting\Shared Documents\Team\Hackathon\2023\Project Hack 18\Challenges\Challenge 3\Data\Anonymised_ UNSPC request register.xlsx|||`query (6)$`" type="V_String" />
+            <Field name="New UNSPSC Item Request" source="File: C:\Users\User\OneDrive - Continuum Consulting\Shared Documents\Team\Hackathon\2023\Project Hack 18\Challenges\Challenge 3\Data\Anonymised_ UNSPC request register.xlsx|||`query (6)$`" type="Double" />
+            <Field name="Item Type3" size="255" source="File: C:\Users\User\OneDrive - Continuum Consulting\Shared Documents\Team\Hackathon\2023\Project Hack 18\Challenges\Challenge 3\Data\Anonymised_ UNSPC request register.xlsx|||`query (6)$`" type="V_String" />
+            <Field name="Path" size="255" source="File: C:\Users\User\OneDrive - Continuum Consulting\Shared Documents\Team\Hackathon\2023\Project Hack 18\Challenges\Challenge 3\Data\Anonymised_ UNSPC request register.xlsx|||`query (6)$`" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="2">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="54" y="414" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File OutputFileName="" RecordLimit="" SearchSubDirs="False" FileFormat="25">..\..\Challenges\Challenge 3\Data\UNGM_UNSPSC_27-Feb-2023.xlsx|||`UNSPSC$`</File>
+          <FormatSpecificOptions>
+            <FirstRowData>False</FirstRowData>
+            <ImportLine>1</ImportLine>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>UNGM_UNSPSC_27-Feb-2023.xlsx
+Query=`UNSPSC$`</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Key" source="File: C:\Users\User\OneDrive - Continuum Consulting\Shared Documents\Team\Hackathon\2023\Project Hack 18\Challenges\Challenge 3\Data\UNGM_UNSPSC_27-Feb-2023.xlsx|||`UNSPSC$`" type="Double" />
+            <Field name="Parent key" source="File: C:\Users\User\OneDrive - Continuum Consulting\Shared Documents\Team\Hackathon\2023\Project Hack 18\Challenges\Challenge 3\Data\UNGM_UNSPSC_27-Feb-2023.xlsx|||`UNSPSC$`" type="Double" />
+            <Field name="Code" size="255" source="File: C:\Users\User\OneDrive - Continuum Consulting\Shared Documents\Team\Hackathon\2023\Project Hack 18\Challenges\Challenge 3\Data\UNGM_UNSPSC_27-Feb-2023.xlsx|||`UNSPSC$`" type="V_String" />
+            <Field name="Title" size="255" source="File: C:\Users\User\OneDrive - Continuum Consulting\Shared Documents\Team\Hackathon\2023\Project Hack 18\Challenges\Challenge 3\Data\UNGM_UNSPSC_27-Feb-2023.xlsx|||`UNSPSC$`" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="4">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="426" y="414" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\User\AppData\Local\Temp\Engine_18288_6eb396afe4b24fff960b3850b3cb4a00_\Engine_4452_68542085bc084f6fb3be9120f19a352b_.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="5">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.RecordID.RecordID">
+        <Position x="306" y="126" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FieldName>RecordID</FieldName>
+          <StartValue>1</StartValue>
+          <FieldType>Int32</FieldType>
+          <FieldSize>6</FieldSize>
+          <Position>0</Position>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxRecordID" />
+    </Node>
+    <Node ToolID="6">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Transpose.Transpose">
+        <Position x="414" y="234" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <ErrorWarn>Warn</ErrorWarn>
+          <KeyFields>
+            <Field field="RecordID" />
+          </KeyFields>
+          <DataFields>
+            <Field field="RecordID" selected="False" />
+            <Field field="Single or Multi-Line" selected="True" />
+            <Field field="Request Status" selected="True" />
+            <Field field="ID" selected="True" />
+            <Field field="Title" selected="True" />
+            <Field field="SubmitRqstBool" selected="True" />
+            <Field field="Raised Date" selected="True" />
+            <Field field="UNSPSC Number" selected="True" />
+            <Field field="Item Type" selected="True" />
+            <Field field="Item Type Short Ref" selected="True" />
+            <Field field="Short Description" selected="True" />
+            <Field field="Long Description" selected="True" />
+            <Field field="UoM" selected="True" />
+            <Field field="Size" selected="True" />
+            <Field field="Comments" selected="True" />
+            <Field field="Year" selected="True" />
+            <Field field="SufficientInformation" selected="True" />
+            <Field field="ProcurComment" selected="True" />
+            <Field field="UNSPSCDescLong" selected="True" />
+            <Field field="New Item AutoNumber" selected="True" />
+            <Field field="UNSPSCCd" selected="True" />
+            <Field field="SizeCd" selected="True" />
+            <Field field="UOM2" selected="True" />
+            <Field field="New UNSPSC Item Request" selected="True" />
+            <Field field="Item Type3" selected="True" />
+            <Field field="Path" selected="True" />
+            <Field field="*Unknown" selected="True" />
+          </DataFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTranspose" />
+    </Node>
+    <Node ToolID="7">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.FindReplace.FindReplace">
+        <Position x="810" y="306" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FieldFind>Value</FieldFind>
+          <FieldSearch>Code</FieldSearch>
+          <ReplaceFoundField>Title</ReplaceFoundField>
+          <FindMode>FindAny</FindMode>
+          <NoCase value="False" />
+          <MatchWholeWord value="False" />
+          <ReplaceMode>Append</ReplaceMode>
+          <ReplaceMultipleFound value="True" />
+          <ReplaceAppendFields>
+            <Field field="Key" />
+            <Field field="Parent key" />
+            <Field field="Code" />
+            <Field field="Title" />
+          </ReplaceAppendFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFindReplace" />
+    </Node>
+    <Node ToolID="8">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="330" y="342" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="9">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Sample.Sample">
+        <Position x="474" y="342" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Mode>Skip</Mode>
+          <N>10</N>
+          <GroupFields orderChanged="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Skip 1st 10 rows</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSample" />
+    </Node>
+    <Node ToolID="11">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.RegEx.RegEx">
+        <Position x="606" y="234" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Field>Value</Field>
+          <RegExExpression value="\d{8}" />
+          <CaseInsensitve value="True" />
+          <Method>ParseSimple</Method>
+          <Replace expression="">
+            <CopyUnmatched value="True" />
+          </Replace>
+          <ParseSimple>
+            <SplitToRows value="True" />
+          </ParseSimple>
+          <ParseComplex>
+            <Field field="No Marked Groups Found" type="No Marked Groups Found" size="No Marked Groups Found" />
+          </ParseComplex>
+          <Match>
+            <Field>Name_Matched</Field>
+            <ErrorUnmatched value="False" />
+          </Match>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxRegEx" />
+    </Node>
+    <Node ToolID="12">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="966" y="306" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Mode>Simple</Mode>
+          <Simple>
+            <Operator>IsNotNull</Operator>
+            <Field>Key</Field>
+            <Operands>
+              <IgnoreTimeInDateTime>True</IgnoreTimeInDateTime>
+              <DateType>fixed</DateType>
+              <PeriodDate>2023-02-27 10:13:01</PeriodDate>
+              <PeriodType>
+              </PeriodType>
+              <PeriodCount>0</PeriodCount>
+              <Operand>
+              </Operand>
+              <StartDate>2023-02-27 10:13:01</StartDate>
+              <EndDate>2023-02-27 10:13:01</EndDate>
+            </Operands>
+          </Simple>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>!IsNull([Key])</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="13">
+      <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+        <Position x="1146" y="306" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SummarizeFields>
+            <SummarizeField field="RecordID" action="GroupBy" rename="RecordID" />
+            <SummarizeField field="Key" action="GroupBy" rename="Key" />
+            <SummarizeField field="Parent key" action="GroupBy" rename="Parent key" />
+            <SummarizeField field="Code" action="GroupBy" rename="Code" />
+            <SummarizeField field="Title" action="GroupBy" rename="Title" />
+          </SummarizeFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+    </Node>
+    <Node ToolID="14">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+        <Position x="1350" y="162" />
+      </GuiSettings>
+      <Properties>
+        <Configuration joinByRecordPos="False">
+          <JoinInfo connection="Left">
+            <Field field="RecordID" />
+          </JoinInfo>
+          <JoinInfo connection="Right">
+            <Field field="RecordID" />
+          </JoinInfo>
+          <SelectConfiguration>
+            <Configuration outputConnection="Join">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Right_RecordID" selected="False" rename="Right_RecordID" input="Right_" />
+                <SelectField field="Right_Key" selected="False" input="Right_" />
+                <SelectField field="Right_Parent key" selected="False" input="Right_" />
+                <SelectField field="Right_Code" selected="False" input="Right_" />
+                <SelectField field="Right_Title" selected="False" rename="Right_Title" input="Right_" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+    </Node>
+    <Node ToolID="20">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="186" y="126" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Mode>Simple</Mode>
+          <Simple>
+            <Operator>!=</Operator>
+            <Field>Request Status</Field>
+            <Operands>
+              <IgnoreTimeInDateTime>True</IgnoreTimeInDateTime>
+              <DateType>fixed</DateType>
+              <PeriodDate>2023-02-27 10:29:03</PeriodDate>
+              <PeriodType>
+              </PeriodType>
+              <PeriodCount>0</PeriodCount>
+              <StartDate>2023-02-27 10:29:03</StartDate>
+              <EndDate>2023-02-27 10:29:03</EndDate>
+              <Operand>Request Rejected</Operand>
+            </Operands>
+          </Simple>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>[Request Status] != "Request Rejected"</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="22">
+      <GuiSettings>
+        <Position x="1530" y="162" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Value name="Check Box (135)">False</Value>
+          <Value name="Check Box (136)">False</Value>
+          <Value name="List Box (11)">"RecordID","Single or Multi-Line","Request Status","ID","Title","SubmitRqstBool","Raised Date","UNSPSC Number","Item Type","Item Type Short Ref","Short Description","Long Description","UoM","Size","Comments","Year","SufficientInformation","ProcurComment","UNSPSCDescLong","New Item AutoNumber","UNSPSCCd","SizeCd","UOM2","New UNSPSC Item Request","Item Type3","Path"</Value>
+          <Value name="Check Box (84)">False</Value>
+          <Value name="Check Box (117)">False</Value>
+          <Value name="Check Box (15)">True</Value>
+          <Value name="Check Box (109)">True</Value>
+          <Value name="Check Box (122)">False</Value>
+          <Value name="Check Box (53)">False</Value>
+          <Value name="Check Box (58)">False</Value>
+          <Value name="Check Box (70)">False</Value>
+          <Value name="Check Box (77)">False</Value>
+          <Value name="Drop Down (81)">upper</Value>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+      </Properties>
+      <EngineSettings Macro="Cleanse.yxmc" />
+    </Node>
+    <Node ToolID="24">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Transpose.Transpose">
+        <Position x="1758" y="246" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <ErrorWarn>Warn</ErrorWarn>
+          <KeyFields>
+            <Field field="RecordID" />
+          </KeyFields>
+          <DataFields>
+            <Field field="RecordID" selected="False" />
+            <Field field="Single or Multi-Line" selected="False" />
+            <Field field="Request Status" selected="False" />
+            <Field field="ID" selected="False" />
+            <Field field="Title" selected="False" />
+            <Field field="SubmitRqstBool" selected="False" />
+            <Field field="Raised Date" selected="False" />
+            <Field field="UNSPSC Number" selected="True" />
+            <Field field="Item Type" selected="False" />
+            <Field field="Item Type Short Ref" selected="False" />
+            <Field field="Short Description" selected="True" />
+            <Field field="Long Description" selected="True" />
+            <Field field="UoM" selected="False" />
+            <Field field="Size" selected="False" />
+            <Field field="Comments" selected="False" />
+            <Field field="Year" selected="False" />
+            <Field field="SufficientInformation" selected="False" />
+            <Field field="ProcurComment" selected="False" />
+            <Field field="UNSPSCDescLong" selected="False" />
+            <Field field="New Item AutoNumber" selected="False" />
+            <Field field="UNSPSCCd" selected="False" />
+            <Field field="SizeCd" selected="False" />
+            <Field field="UOM2" selected="False" />
+            <Field field="New UNSPSC Item Request" selected="False" />
+            <Field field="Item Type3" selected="False" />
+            <Field field="Path" selected="False" />
+            <Field field="*Unknown" selected="False" />
+          </DataFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTranspose" />
+    </Node>
+    <Node ToolID="26">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.TextInput.TextInput">
+        <Position x="1758" y="354" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <NumRows value="11" />
+          <Fields>
+            <Field name="Value" />
+            <Field name="Replace" />
+          </Fields>
+          <Data>
+            <r>
+              <c>Refer to Materials team Attachment</c>
+              <c />
+            </r>
+            <r>
+              <c>​Multi-Line</c>
+              <c />
+            </r>
+            <r>
+              <c>Multi-Line</c>
+              <c />
+            </r>
+            <r>
+              <c>-</c>
+              <c />
+            </r>
+            <r>
+              <c>Please see attached</c>
+              <c />
+            </r>
+            <r>
+              <c>Please see the attached</c>
+              <c />
+            </r>
+            <r>
+              <c>Please see the attached excel</c>
+              <c />
+            </r>
+            <r>
+              <c>MULTI</c>
+              <c />
+            </r>
+            <r>
+              <c>MULTI-LINE</c>
+              <c />
+            </r>
+            <r>
+              <c>Multi Line</c>
+              <c />
+            </r>
+            <r>
+              <c />
+              <c />
+            </r>
+          </Data>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTextInput" />
+    </Node>
+    <Node ToolID="27">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+        <Position x="1938" y="306" />
+      </GuiSettings>
+      <Properties>
+        <Configuration joinByRecordPos="False">
+          <JoinInfo connection="Left">
+            <Field field="Value" />
+          </JoinInfo>
+          <JoinInfo connection="Right">
+            <Field field="Value" />
+          </JoinInfo>
+          <SelectConfiguration>
+            <Configuration outputConnection="Join">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Left_RecordID" selected="True" input="Left_" />
+                <SelectField field="Left_Name" selected="True" input="Left_" />
+                <SelectField field="Left_Value" selected="True" input="Left_" />
+                <SelectField field="Right_Value" selected="True" rename="Right_Value" input="Right_" />
+                <SelectField field="*Unknown" selected="False" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+    </Node>
+    <Node ToolID="28">
+      <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+        <Position x="2130" y="246" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SummarizeFields>
+            <SummarizeField field="RecordID" action="GroupBy" rename="RecordID" />
+          </SummarizeFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+    </Node>
+    <Node ToolID="29">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+        <Position x="2298" y="150" />
+      </GuiSettings>
+      <Properties>
+        <Configuration joinByRecordPos="False">
+          <JoinInfo connection="Left">
+            <Field field="RecordID" />
+          </JoinInfo>
+          <JoinInfo connection="Right">
+            <Field field="RecordID" />
+          </JoinInfo>
+          <SelectConfiguration>
+            <Configuration outputConnection="Join">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Left_RecordID" selected="True" input="Left_" />
+                <SelectField field="Left_Single or Multi-Line" selected="True" input="Left_" />
+                <SelectField field="Left_Request Status" selected="True" input="Left_" />
+                <SelectField field="Left_ID" selected="True" input="Left_" />
+                <SelectField field="Left_Title" selected="True" input="Left_" />
+                <SelectField field="Left_SubmitRqstBool" selected="True" input="Left_" />
+                <SelectField field="Left_Raised Date" selected="True" input="Left_" />
+                <SelectField field="Left_UNSPSC Number" selected="True" input="Left_" />
+                <SelectField field="Left_Item Type" selected="True" input="Left_" />
+                <SelectField field="Left_Item Type Short Ref" selected="True" input="Left_" />
+                <SelectField field="Left_Short Description" selected="True" input="Left_" />
+                <SelectField field="Left_Long Description" selected="True" input="Left_" />
+                <SelectField field="Left_UoM" selected="True" input="Left_" />
+                <SelectField field="Left_Size" selected="True" input="Left_" />
+                <SelectField field="Left_Comments" selected="True" input="Left_" />
+                <SelectField field="Left_Year" selected="True" input="Left_" />
+                <SelectField field="Left_SufficientInformation" selected="True" input="Left_" />
+                <SelectField field="Left_ProcurComment" selected="True" input="Left_" />
+                <SelectField field="Left_UNSPSCDescLong" selected="True" input="Left_" />
+                <SelectField field="Left_New Item AutoNumber" selected="True" input="Left_" />
+                <SelectField field="Left_UNSPSCCd" selected="True" input="Left_" />
+                <SelectField field="Left_SizeCd" selected="True" input="Left_" />
+                <SelectField field="Left_UOM2" selected="True" input="Left_" />
+                <SelectField field="Left_New UNSPSC Item Request" selected="True" input="Left_" />
+                <SelectField field="Left_Item Type3" selected="True" input="Left_" />
+                <SelectField field="Left_Path" selected="True" input="Left_" />
+                <SelectField field="Right_RecordID" selected="False" rename="Right_RecordID" input="Right_" />
+                <SelectField field="*Unknown" selected="False" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+    </Node>
+    <Node ToolID="30">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="2514" y="150" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="RecordID" selected="True" />
+            <SelectField field="ID" selected="True" />
+            <SelectField field="Title" selected="True" />
+            <SelectField field="Raised Date" selected="True" />
+            <SelectField field="Item Type" selected="True" />
+            <SelectField field="Short Description" selected="True" />
+            <SelectField field="Long Description" selected="True" />
+            <SelectField field="prompt" selected="True" />
+            <SelectField field="*Unknown" selected="False" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="31">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="2718" y="150" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="&quot;What UNSPSC is for a &quot; + [Item Type] + &quot; with the description &quot; + [Short Description] + &quot; &quot; + [Long Description] + &quot;?&quot;" field="prompt" size="1073741823" type="V_WString" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>prompt = "What UNSPSC is for a " + [Item Type] + " with the description " + [Sho...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="32">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.FindReplace.FindReplace">
+        <Position x="2886" y="198" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FieldFind>Short Description</FieldFind>
+          <FieldSearch>Value</FieldSearch>
+          <ReplaceFoundField>Replace</ReplaceFoundField>
+          <FindMode>FindAny</FindMode>
+          <NoCase value="False" />
+          <MatchWholeWord value="False" />
+          <ReplaceMode>Replace</ReplaceMode>
+          <ReplaceMultipleFound value="True" />
+          <ReplaceAppendFields />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFindReplace" />
+    </Node>
+    <Node ToolID="33">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="1938" y="390" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="Replace" selected="True" type="V_String" size="1" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="34">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.FindReplace.FindReplace">
+        <Position x="2994" y="234" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FieldFind>Long Description</FieldFind>
+          <FieldSearch>Value</FieldSearch>
+          <ReplaceFoundField>Replace</ReplaceFoundField>
+          <FindMode>FindAny</FindMode>
+          <NoCase value="False" />
+          <MatchWholeWord value="False" />
+          <ReplaceMode>Replace</ReplaceMode>
+          <ReplaceMultipleFound value="True" />
+          <ReplaceAppendFields />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFindReplace" />
+    </Node>
+    <Node ToolID="35">
+      <GuiSettings>
+        <Position x="3150" y="234" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Value name="Check Box (135)">False</Value>
+          <Value name="Check Box (136)">False</Value>
+          <Value name="List Box (11)">"RecordID","ID","Title","Raised Date","Item Type","Short Description","Long Description","prompt"</Value>
+          <Value name="Check Box (84)">True</Value>
+          <Value name="Check Box (117)">True</Value>
+          <Value name="Check Box (15)">False</Value>
+          <Value name="Check Box (109)">False</Value>
+          <Value name="Check Box (122)">False</Value>
+          <Value name="Check Box (53)">False</Value>
+          <Value name="Check Box (58)">False</Value>
+          <Value name="Check Box (70)">False</Value>
+          <Value name="Check Box (77)">False</Value>
+          <Value name="Drop Down (81)">upper</Value>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+      </Properties>
+      <EngineSettings Macro="Cleanse.yxmc" />
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="20" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="2" Connection="Output" />
+      <Destination ToolID="4" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="2" Connection="Output" />
+      <Destination ToolID="8" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="5" Connection="Output" />
+      <Destination ToolID="6" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="5" Connection="Output" />
+      <Destination ToolID="14" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="13" Connection="Output" />
+      <Destination ToolID="14" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="6" Connection="Output" />
+      <Destination ToolID="11" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="7" Connection="Output" />
+      <Destination ToolID="12" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="8" Connection="Output" />
+      <Destination ToolID="9" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="9" Connection="Output" />
+      <Destination ToolID="7" Connection="Source" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="11" Connection="Output" />
+      <Destination ToolID="7" Connection="Targets" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="12" Connection="True" />
+      <Destination ToolID="13" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="14" Connection="Left" />
+      <Destination ToolID="22" Connection="Input2" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="20" Connection="True" />
+      <Destination ToolID="5" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="22" Connection="Output26" />
+      <Destination ToolID="24" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="22" Connection="Output26" />
+      <Destination ToolID="29" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="28" Connection="Output" />
+      <Destination ToolID="29" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="24" Connection="Output" />
+      <Destination ToolID="27" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="26" Connection="Output" />
+      <Destination ToolID="27" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="26" Connection="Output" />
+      <Destination ToolID="33" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="27" Connection="Left" />
+      <Destination ToolID="28" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="29" Connection="Join" />
+      <Destination ToolID="30" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="30" Connection="Output" />
+      <Destination ToolID="31" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="31" Connection="Output" />
+      <Destination ToolID="32" Connection="Targets" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="33" Connection="Output" />
+      <Destination ToolID="32" Connection="Source" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="32" Connection="Output" />
+      <Destination ToolID="34" Connection="Targets" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="33" Connection="Output" />
+      <Destination ToolID="34" Connection="Source" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="34" Connection="Output" />
+      <Destination ToolID="35" Connection="Input2" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <PredictiveToolsCodePage value="1252" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="False" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>Data Discovery</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+      <WorkflowId value="d7844e93-5ff3-4f18-bae1-5aef31daae54" />
+      <Telemetry>
+        <PreviousWorkflowId value="c3b1eb76-68e0-4ab4-bdab-bc0693bf6a1b" />
+        <OriginWorkflowId value="c3b1eb76-68e0-4ab4-bdab-bc0693bf6a1b" />
+      </Telemetry>
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>

@@ -1,0 +1,149 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2022.3">
+  <Nodes>
+    <Node ToolID="1">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.TextInput.TextInput">
+        <Position x="90" y="150" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <NumRows value="5" />
+          <Fields>
+            <Field name="Field1" />
+          </Fields>
+          <Data>
+            <r>
+              <c>"1 What UNSPSC is for a " + [Item Type] + " with the description  " + [Long Description] + "?"</c>
+            </r>
+            <r>
+              <c>"2 What UNSPSC is for a " + [Item Type] + " with the description " +  [Short Description]  +  "?"</c>
+            </r>
+            <r>
+              <c>"3 What UNSPSC is for a " + [Item Type] + " with the description " + [Short Description] + " " + [Long Description] + "?"</c>
+            </r>
+            <r>
+              <c>"4 What is the best choice of UNSPSC based of this information for an item of " + [Item Type] + " with the description " + [Short Description]  + [Long Description] + "?"</c>
+            </r>
+            <r>
+              <c>"5 What UNSPSC is for a " + [Short Description] + [Long Description] + "?"</c>
+            </r>
+          </Data>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTextInput" />
+    </Node>
+    <Node ToolID="4">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="414" y="138" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\Elliot\AppData\Local\Temp\Engine_8660_cdc297465d9065438bf3d05ac53c3add_\Engine_8660_1f2a356f51ff9a4fa4fa6b791525f536~.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="15">
+      <GuiSettings>
+        <Position x="210" y="150" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Value name="ControlParams"><![CDATA[Control Parameter (44)=Field1
+]]></Value>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name>Data Discovery EA Takeover test (2)</Name>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output42">
+          <RecordInfo>
+            <Field name="RecordID" source="Formula: IIF(IsNull([_CurrentField_]),0,[_CurrentField_])" type="Int32" />
+            <Field name="HttpHeaderLog" size="1073741823" source="Formula: [OAI_Log] + [OAI_HTTPCode] + &quot;;&quot;" type="V_WString" />
+            <Field name="Response" size="1073741823" source="Formula: Trim([_CurrentField_],&quot; 	&quot;+CharFromInt(10)+CharFromInt(13)+CharFromInt(160))" type="V_WString" />
+            <Field description="TextToColumns: Parsed from JSON_Name" name="ResponseIndex" size="1073741823" source="TextToColumns: Parsed from JSON_Name" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings Macro="C:\Users\Elliot\Continuum Consulting\Client Documents - Documents\Team\Hackathon\2023\Project Hack 18\Submissions\Workflows\Data Discovery EA Takeover test.yxmc" />
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="15" Connection="Control" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="15" Connection="Output42" />
+      <Destination ToolID="4" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <RunWithE2 value="True" />
+    <PredictiveToolsCodePage value="1252" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>BM Runner]</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+      <WorkflowId value="aebf6945-bf98-4c22-87cd-28ee85b9e234" />
+      <Telemetry>
+        <PreviousWorkflowId value="2f434c1c-4018-4e45-888c-cb6982a8a8ce" />
+        <OriginWorkflowId value="2f434c1c-4018-4e45-888c-cb6982a8a8ce" />
+      </Telemetry>
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>

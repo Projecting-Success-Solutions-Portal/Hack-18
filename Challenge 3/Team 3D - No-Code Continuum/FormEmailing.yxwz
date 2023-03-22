@@ -1,0 +1,703 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2022.3">
+  <Nodes>
+    <Node ToolID="1">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.TextInput.TextInput">
+        <Position x="318" y="342" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <NumRows value="1" />
+          <Fields>
+            <Field name="email" />
+            <Field name="firstname" />
+            <Field name="shortdesc" />
+            <Field name="longdesc" />
+            <Field name="itemtype" />
+          </Fields>
+          <Data>
+            <r>
+              <c>matteo.pallot@gmail.com</c>
+              <c>Matteo</c>
+              <c>watch</c>
+              <c>Silver watch with a metal bracelet</c>
+              <c>Goods</c>
+            </r>
+          </Data>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="email" size="23" source="TextInput:" type="String" />
+            <Field name="firstname" size="6" source="TextInput:" type="String" />
+            <Field name="shortdesc" size="5" source="TextInput:" type="String" />
+            <Field name="longdesc" size="34" source="TextInput:" type="String" />
+            <Field name="itemtype" size="5" source="TextInput:" type="String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTextInput" />
+    </Node>
+    <Node ToolID="2">
+      <GuiSettings Plugin="PortfolioPluginsGui.Email.Email">
+        <Position x="1350" y="342" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SMTPServerName>smtp.gmail.com</SMTPServerName>
+          <ToIsField value="True" />
+          <To>email</To>
+          <CcIsField value="False" />
+          <Cc />
+          <BccIsField value="False" />
+          <Bcc />
+          <FromIsField value="False" />
+          <From>noreply.continuumje@gmail.com</From>
+          <SubjectIsField value="False" />
+          <Subject>UNSPSC Code</Subject>
+          <BodyIsField value="True" />
+          <Body>Response</Body>
+          <UserName>noreply.continuumje@gmail.com</UserName>
+          <Enabled>True</Enabled>
+          <Password>4B4EFA2566FC177F938B872D492E13505A014154CDD2CF087BB98FBBF4C4F0222D86B1988</Password>
+          <Port>587</Port>
+          <Encryption>STARTTLS</Encryption>
+          <SMTPAuth value="True" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="PortfolioPluginsEngine.dll" EngineDllEntryPoint="AlteryxComposerEmail" />
+    </Node>
+    <Node ToolID="3">
+      <GuiSettings>
+        <Position x="834" y="342" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Value name="Text Box (20)">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</Value>
+          <Value name="Text Box (27)">org-NL1p3u4mSu6PvzGQfRIAqKH3</Value>
+          <Value name="Drop Down (12)">3</Value>
+          <Value name="Input.Input"><![CDATA[RecordID=RecordID
+Prompt=prompt
+Temperature_0to1 (Optional)=temperature
+]]></Value>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="RecordID" source="File: (Multiple Sources)" type="Int32" />
+            <Field name="Prompt" size="1073741823" source="File: (Multiple Sources)" type="V_WString" />
+            <Field name="Suffix" size="1073741823" source="File: (Multiple Sources)" type="V_WString" />
+            <Field name="HttpHeaderLog" size="1073741823" source="Formula: (Multiple Sources)" type="V_WString" />
+            <Field name="Response" size="1073741823" source="JSONParse:  (BatchMacro) (BatchMacro)" type="V_WString" />
+            <Field description="TextToColumns: Parsed from JSON_Name" name="ResponseIndex" size="1073741823" source="TextToColumns: Parsed from JSON_Name (BatchMacro) (BatchMacro)" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings Macro="..\..\..\..\..\..\..\Desktop\OpenAI_ChatGPT_Completions\OpenAI_ChatGPT_Completions.yxmc" />
+    </Node>
+    <Node ToolID="4">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="486" y="342" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="0" field="temperature" size="8" type="Double" />
+            <FormulaField expression="&quot;What UNSPSC is for a &quot; + [itemtype] + &quot; with the description &quot; + [shortdesc] + &quot; &quot; + [longdesc] + &quot;?&quot;" field="prompt" size="1073741823" type="V_WString" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>temperature = 0
+prompt = "What UNSPSC is for a " + [itemtype] + " with the descr...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="email" size="23" source="TextInput:" type="String" />
+            <Field name="firstname" size="6" source="TextInput:" type="String" />
+            <Field name="shortdesc" size="5" source="TextInput:" type="String" />
+            <Field name="longdesc" size="34" source="TextInput:" type="String" />
+            <Field name="itemtype" size="5" source="TextInput:" type="String" />
+            <Field name="temperature" source="Formula: 0" type="Double" />
+            <Field name="prompt" size="1073741823" source="Formula: &quot;What UNSPSC is for a &quot; + [itemtype] + &quot; with the description &quot; + [shortdesc] + &quot; &quot; + [longdesc] + &quot;?&quot;" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="5">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.RecordID.RecordID">
+        <Position x="630" y="342" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FieldName>RecordID</FieldName>
+          <StartValue>1</StartValue>
+          <FieldType>Int32</FieldType>
+          <FieldSize>6</FieldSize>
+          <Position>0</Position>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="RecordID" source="RecordID: Starting Value=1" type="Int32" />
+            <Field name="email" size="23" source="TextInput:" type="String" />
+            <Field name="firstname" size="6" source="TextInput:" type="String" />
+            <Field name="shortdesc" size="5" source="TextInput:" type="String" />
+            <Field name="longdesc" size="34" source="TextInput:" type="String" />
+            <Field name="itemtype" size="5" source="TextInput:" type="String" />
+            <Field name="temperature" source="Formula: 0" type="Double" />
+            <Field name="prompt" size="1073741823" source="Formula: &quot;What UNSPSC is for a &quot; + [itemtype] + &quot; with the description &quot; + [shortdesc] + &quot; &quot; + [longdesc] + &quot;?&quot;" type="V_WString" />
+          </RecordInfo>
+          <SortInfo>
+            <Field field="RecordID" order="Asc" />
+          </SortInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxRecordID" />
+    </Node>
+    <Node ToolID="6">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+        <Position x="990" y="342" />
+      </GuiSettings>
+      <Properties>
+        <Configuration joinByRecordPos="False">
+          <JoinInfo connection="Left">
+            <Field field="RecordID" />
+          </JoinInfo>
+          <JoinInfo connection="Right">
+            <Field field="RecordID" />
+          </JoinInfo>
+          <SelectConfiguration>
+            <Configuration outputConnection="Join">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Right_RecordID" selected="True" rename="Right_RecordID" input="Right_" />
+                <SelectField field="Right_prompt" selected="True" rename="Right_prompt" input="Right_" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Left">
+          <RecordInfo>
+            <Field name="RecordID" source="File: (Multiple Sources)" type="Int32" />
+            <Field name="Prompt" size="1073741823" source="File: (Multiple Sources)" type="V_WString" />
+            <Field name="Suffix" size="1073741823" source="File: (Multiple Sources)" type="V_WString" />
+            <Field name="HttpHeaderLog" size="1073741823" source="Formula: (Multiple Sources)" type="V_WString" />
+            <Field name="Response" size="1073741823" source="JSONParse:  (BatchMacro) (BatchMacro)" type="V_WString" />
+            <Field description="TextToColumns: Parsed from JSON_Name" name="ResponseIndex" size="1073741823" source="TextToColumns: Parsed from JSON_Name (BatchMacro) (BatchMacro)" type="V_WString" />
+          </RecordInfo>
+          <SortInfo noProgress="True">
+            <Field field="RecordID" />
+          </SortInfo>
+        </MetaInfo>
+        <MetaInfo connection="Join">
+          <RecordInfo>
+            <Field name="RecordID" source="File: (Multiple Sources)" type="Int32" />
+            <Field name="Prompt" size="1073741823" source="File: (Multiple Sources)" type="V_WString" />
+            <Field name="Suffix" size="1073741823" source="File: (Multiple Sources)" type="V_WString" />
+            <Field name="HttpHeaderLog" size="1073741823" source="Formula: (Multiple Sources)" type="V_WString" />
+            <Field name="Response" size="1073741823" source="JSONParse:  (BatchMacro) (BatchMacro)" type="V_WString" />
+            <Field description="TextToColumns: Parsed from JSON_Name" name="ResponseIndex" size="1073741823" source="TextToColumns: Parsed from JSON_Name (BatchMacro) (BatchMacro)" type="V_WString" />
+            <Field name="Right_RecordID" source="RecordID: Starting Value=1" type="Int32" />
+            <Field name="email" size="23" source="TextInput:" type="String" />
+            <Field name="firstname" size="6" source="TextInput:" type="String" />
+            <Field name="shortdesc" size="5" source="TextInput:" type="String" />
+            <Field name="longdesc" size="34" source="TextInput:" type="String" />
+            <Field name="itemtype" size="5" source="TextInput:" type="String" />
+            <Field name="temperature" source="Formula: 0" type="Double" />
+            <Field name="Right_prompt" size="1073741823" source="Formula: &quot;What UNSPSC is for a &quot; + [itemtype] + &quot; with the description &quot; + [shortdesc] + &quot; &quot; + [longdesc] + &quot;?&quot;" type="V_WString" />
+          </RecordInfo>
+          <SortInfo>
+            <Field field="RecordID" order="" />
+          </SortInfo>
+        </MetaInfo>
+        <MetaInfo connection="Right">
+          <RecordInfo>
+            <Field name="RecordID" source="RecordID: Starting Value=1" type="Int32" />
+            <Field name="email" size="23" source="TextInput:" type="String" />
+            <Field name="firstname" size="6" source="TextInput:" type="String" />
+            <Field name="shortdesc" size="5" source="TextInput:" type="String" />
+            <Field name="longdesc" size="34" source="TextInput:" type="String" />
+            <Field name="itemtype" size="5" source="TextInput:" type="String" />
+            <Field name="temperature" source="Formula: 0" type="Double" />
+            <Field name="prompt" size="1073741823" source="Formula: &quot;What UNSPSC is for a &quot; + [itemtype] + &quot; with the description &quot; + [shortdesc] + &quot; &quot; + [longdesc] + &quot;?&quot;" type="V_WString" />
+          </RecordInfo>
+          <SortInfo noProgress="True">
+            <Field field="RecordID" />
+          </SortInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+    </Node>
+    <Node ToolID="7">
+      <GuiSettings Plugin="AlteryxGuiToolkit.Questions.Tab.Tab">
+        <Position x="0" y="0" width="59" height="59" />
+      </GuiSettings>
+      <Properties>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="8">
+      <GuiSettings Plugin="AlteryxGuiToolkit.Questions.TextBox.QuestionTextBox">
+        <Position x="30" y="54" width="59" height="59" />
+      </GuiSettings>
+      <Properties>
+        <Configuration />
+        <Annotation DisplayMode="0">
+          <Name>email</Name>
+          <AnnotationText>Text Box (8)</AnnotationText>
+          <DefaultAnnotationText>email</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="9">
+      <GuiSettings Plugin="AlteryxGuiToolkit.Questions.TextBox.QuestionTextBox">
+        <Position x="186" y="54" width="59" height="59" />
+      </GuiSettings>
+      <Properties>
+        <Configuration />
+        <Annotation DisplayMode="0">
+          <Name>name</Name>
+          <AnnotationText>Text Box (9)</AnnotationText>
+          <DefaultAnnotationText>name</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="10">
+      <GuiSettings Plugin="AlteryxGuiToolkit.Questions.TextBox.QuestionTextBox">
+        <Position x="462" y="54" width="59" height="59" />
+      </GuiSettings>
+      <Properties>
+        <Configuration />
+        <Annotation DisplayMode="0">
+          <Name>shortdesc</Name>
+          <AnnotationText>Text Box (10)</AnnotationText>
+          <DefaultAnnotationText>shortdesc</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="11">
+      <GuiSettings Plugin="AlteryxGuiToolkit.Questions.TextBox.QuestionTextBox">
+        <Position x="618" y="54" width="59" height="59" />
+      </GuiSettings>
+      <Properties>
+        <Configuration />
+        <Annotation DisplayMode="0">
+          <Name>longdesc</Name>
+          <AnnotationText>Text Box (11)</AnnotationText>
+          <DefaultAnnotationText>longdesc</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="12">
+      <GuiSettings Plugin="AlteryxGuiToolkit.Action.Action">
+        <Position x="30" y="186" width="59" height="59" />
+      </GuiSettings>
+      <Properties>
+        <Configuration />
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Update Value</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="13">
+      <GuiSettings Plugin="AlteryxGuiToolkit.Action.Action">
+        <Position x="186" y="186" width="59" height="59" />
+      </GuiSettings>
+      <Properties>
+        <Configuration />
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Update Value</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="14">
+      <GuiSettings Plugin="AlteryxGuiToolkit.Action.Action">
+        <Position x="462" y="186" width="59" height="59" />
+      </GuiSettings>
+      <Properties>
+        <Configuration />
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Update Value</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="15">
+      <GuiSettings Plugin="AlteryxGuiToolkit.Action.Action">
+        <Position x="618" y="186" width="59" height="59" />
+      </GuiSettings>
+      <Properties>
+        <Configuration />
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Update Value</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="16">
+      <GuiSettings Plugin="AlteryxGuiToolkit.Questions.DropDownListBox.DropDown">
+        <Position x="318" y="54" width="59" height="59" />
+      </GuiSettings>
+      <Properties>
+        <Configuration />
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Drop Down (16)</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="17">
+      <GuiSettings Plugin="AlteryxGuiToolkit.Action.Action">
+        <Position x="318" y="186" width="59" height="59" />
+      </GuiSettings>
+      <Properties>
+        <Configuration />
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Update Value</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="4" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="3" Connection="Output" />
+      <Destination ToolID="6" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="5" Connection="Output" />
+      <Destination ToolID="6" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="4" Connection="Output" />
+      <Destination ToolID="5" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="5" Connection="Output" />
+      <Destination ToolID="3" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="6" Connection="Join" />
+      <Destination ToolID="2" Connection="Input" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="8" Connection="Question" />
+      <Destination ToolID="12" Connection="Question" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="9" Connection="Question" />
+      <Destination ToolID="13" Connection="Question" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="10" Connection="Question" />
+      <Destination ToolID="14" Connection="Question" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="11" Connection="Question" />
+      <Destination ToolID="15" Connection="Question" />
+    </Connection>
+    <Connection name="#2">
+      <Origin ToolID="12" Connection="Action" />
+      <Destination ToolID="1" Connection="Action" />
+    </Connection>
+    <Connection name="#3">
+      <Origin ToolID="13" Connection="Action" />
+      <Destination ToolID="1" Connection="Action" />
+    </Connection>
+    <Connection name="#4">
+      <Origin ToolID="14" Connection="Action" />
+      <Destination ToolID="1" Connection="Action" />
+    </Connection>
+    <Connection name="#5">
+      <Origin ToolID="15" Connection="Action" />
+      <Destination ToolID="1" Connection="Action" />
+    </Connection>
+    <Connection name="#6">
+      <Origin ToolID="17" Connection="Action" />
+      <Destination ToolID="1" Connection="Action" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="16" Connection="Question" />
+      <Destination ToolID="17" Connection="Question" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <PredictiveToolsCodePage value="1252" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="False" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <Constants>
+      <Constant>
+        <Namespace>Question</Namespace>
+        <Name>email</Name>
+        <Value />
+        <IsNumeric value="False" />
+      </Constant>
+      <Constant>
+        <Namespace>Question</Namespace>
+        <Name>name</Name>
+        <Value />
+        <IsNumeric value="False" />
+      </Constant>
+      <Constant>
+        <Namespace>Question</Namespace>
+        <Name>shortdesc</Name>
+        <Value />
+        <IsNumeric value="False" />
+      </Constant>
+      <Constant>
+        <Namespace>Question</Namespace>
+        <Name>longdesc</Name>
+        <Value />
+        <IsNumeric value="False" />
+      </Constant>
+      <Constant>
+        <Namespace>Question</Namespace>
+        <Name>Drop Down (16)</Name>
+        <Value />
+        <IsNumeric value="False" />
+      </Constant>
+    </Constants>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>FormEmailing</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+      <WorkflowId value="3d9d76fa-0c79-46f1-bf57-65750110ede7" />
+      <Telemetry>
+        <PreviousWorkflowId value="3ba03576-9ed2-4639-bf08-0bb4ea7252c5" />
+        <OriginWorkflowId value="3ba03576-9ed2-4639-bf08-0bb4ea7252c5" />
+      </Telemetry>
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+    <RuntimeProperties>
+      <Actions>
+        <NoCondition>
+          <Type>NoCondition</Type>
+          <Description>(Always Run)</Description>
+          <True>
+            <Action>
+              <Type>Dynamic</Type>
+              <Description />
+              <ToolId value="12" />
+              <Expression>{{INPUT}}</Expression>
+              <Destination>1/Data/r[1]/c[1]</Destination>
+              <Mapping>Update Cell</Mapping>
+              <Mode>Expression</Mode>
+              <DynamicConfiguration>row	1
+column	1</DynamicConfiguration>
+              <DefaultConfiguration value="True" />
+            </Action>
+            <Action>
+              <Type>Dynamic</Type>
+              <Description />
+              <ToolId value="13" />
+              <Expression>{{INPUT}}</Expression>
+              <Destination>1/Data/r[1]/c[2]</Destination>
+              <Mapping>Update Cell</Mapping>
+              <Mode>Expression</Mode>
+              <DynamicConfiguration>row	1
+column	2</DynamicConfiguration>
+              <DefaultConfiguration value="False" />
+            </Action>
+            <Action>
+              <Type>Dynamic</Type>
+              <Description />
+              <ToolId value="14" />
+              <Expression>{{INPUT}}</Expression>
+              <Destination>1/Data/r[1]/c[3]</Destination>
+              <Mapping>Update Cell</Mapping>
+              <Mode>Expression</Mode>
+              <DynamicConfiguration>row	1
+column	3</DynamicConfiguration>
+              <DefaultConfiguration value="False" />
+            </Action>
+            <Action>
+              <Type>Dynamic</Type>
+              <Description />
+              <ToolId value="15" />
+              <Expression>{{INPUT}}</Expression>
+              <Destination>1/Data/r[1]/c[4]</Destination>
+              <Mapping>Update Cell</Mapping>
+              <Mode>Expression</Mode>
+              <DynamicConfiguration>row	1
+column	4</DynamicConfiguration>
+              <DefaultConfiguration value="False" />
+            </Action>
+            <Action>
+              <Type>Dynamic</Type>
+              <Description />
+              <ToolId value="17" />
+              <Expression>{{INPUT}}</Expression>
+              <Destination>1/Data/r[1]/c[5]</Destination>
+              <Mapping>Update Cell</Mapping>
+              <Mode>Expression</Mode>
+              <DynamicConfiguration>row	1
+column	5</DynamicConfiguration>
+              <DefaultConfiguration value="False" />
+            </Action>
+          </True>
+        </NoCondition>
+      </Actions>
+      <Questions>
+        <Question>
+          <Type>Tab</Type>
+          <Description>Questions</Description>
+          <Name>Tab (7)</Name>
+          <ToolId value="7" />
+          <Questions>
+            <Question>
+              <Type>TextBox</Type>
+              <Description>Email</Description>
+              <Name>email</Name>
+              <ToolId value="8" />
+              <Default />
+              <Password value="False" />
+              <Multiline value="False" />
+              <Hidden value="False" />
+            </Question>
+            <Question>
+              <Type>TextBox</Type>
+              <Description>Firstname</Description>
+              <Name>name</Name>
+              <ToolId value="9" />
+              <Default />
+              <Password value="False" />
+              <Multiline value="False" />
+              <Hidden value="False" />
+            </Question>
+            <Question>
+              <Type>TextBox</Type>
+              <Description>Short Description</Description>
+              <Name>shortdesc</Name>
+              <ToolId value="10" />
+              <Default />
+              <Password value="False" />
+              <Multiline value="False" />
+              <Hidden value="False" />
+            </Question>
+            <Question>
+              <Type>TextBox</Type>
+              <Description>Long Description</Description>
+              <Name>longdesc</Name>
+              <ToolId value="11" />
+              <Default />
+              <Password value="False" />
+              <Multiline value="False" />
+              <Hidden value="False" />
+            </Question>
+            <Question>
+              <Type>ListBox</Type>
+              <Description>Good/Services</Description>
+              <Name>Drop Down (16)</Name>
+              <ToolId value="16" />
+              <Multiple value="False" />
+              <Default />
+              <Mode>Manual</Mode>
+              <Manual_Values><![CDATA[Goods
+Services
+]]></Manual_Values>
+            </Question>
+          </Questions>
+        </Question>
+      </Questions>
+      <ModuleType>Wizard</ModuleType>
+      <MacroCustomHelp value="False" />
+      <MacroDynamicOutputFields value="False" />
+      <MacroImageStd value="39" />
+      <MacroInputs />
+      <MacroOutputs />
+      <Wiz_CustomHelp value="False" />
+      <Wiz_CustomGraphic value="False" />
+      <Wiz_ShowOutput value="True" />
+      <Wiz_OpenOutputTools>
+        <Tool ToolId="3" Selected="True" />
+      </Wiz_OpenOutputTools>
+      <Wiz_OutputMessage />
+      <Wiz_NoOutputFilesMessage />
+      <Wiz_ChainRunWizard />
+    </RuntimeProperties>
+  </Properties>
+</AlteryxDocument>
