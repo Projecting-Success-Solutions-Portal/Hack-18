@@ -1,4 +1,4 @@
-# Team 2A In it for the Experience
+# Team 2A - In it for the Experience
 **Solution**
 
 Using a python chatbot, "In it for the Experience" have created a tool that not only analyses the diversity between work breakdown structures but also creates new work breakdown structures based on natural language criteria and common features of previous work breakdown structures. They visualise the work breakdown structure using PowerBI and also provide analytics into the results.
