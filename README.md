@@ -1,6 +1,6 @@
 # Project Data Analytics Community
 
-The Project Data Analytics Community is a community of project professionals, data analysts and industr experts dedicated to improving project delivery through the power of data and analytics. As part of this community we regularly run our Project:Hack Hackathons where we tackle real world problems with data driven solutions.
+The Project Data Analytics Community is a community of project professionals, data analysts and industry experts dedicated to improving project delivery through the power of data and analytics. As part of this community, we regularly run our Project:Hack Hackathons where we tackle real-world problems with data-driven solutions.
 
 https://www.linkedin.com/company/pdacommunity/
 
@@ -10,9 +10,9 @@ https://www.linkedin.com/company/projsuccess/
 
 # Hack-18
 
-The Hack 18 repository is designed to store full end to end working solutions deemed appropriate for open source solutions.
+The Hack 18 repository is designed to store full end-to-end working solutions deemed appropriate for open-source solutions.
 
-The main purpose for Hack 18 is to solve business problems around project foresight, prediction, risk management and data analytics.
+The main purpose of Hack 18 is to solve business problems around project foresight, prediction, risk management and data analytics.
 
 ## List of Challenges
 
